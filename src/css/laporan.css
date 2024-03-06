@@ -1,0 +1,10 @@
+img.kiri {
+    float: left;
+    margin-left: 50px;
+    width: 105px;
+    height: 105px;
+}
+
+p.ex1 {
+  margin-bottom: 100px;
+}
