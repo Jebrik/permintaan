@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>iAset | <?= $title; ?></title>
+  <title>SimPer | <?= $title; ?></title>
   <!-- Tell the browser to be responsive to screen width -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- Font Awesome -->
@@ -109,7 +109,7 @@
     <aside class="main-sidebar sidebar-light-primary elevation-4">
       <!-- Brand Logo -->
       <a href="<?= base_url() ?>" class="brand-link">
-        <img src="<?= base_url() ?>src/backend/dist/img/iaset.png" class="logo">
+        <img src="<?= base_url() ?>src/backend/dist/img/simper.png" class="logo">
         <!-- <span class="brand-text font-weight-light">iAset</span> -->
       </a>
 
@@ -145,6 +145,12 @@
                   </p>
                 </a>
                 <ul class="nav nav-treeview">
+                <li class="nav-item">
+                    <a href="<?= base_url('satuan') ?>" class="nav-link <?= isset($active_menu_satuan) ? $active_menu_satuan : '' ?>">
+                      <i class="far fa-circle nav-icon"></i>
+                      <p>Satuan</p>
+                    </a>
+                  </li>
                   <li class="nav-item">
                     <a href="<?= base_url('barang') ?>" class="nav-link <?= isset($active_menu_brg) ? $active_menu_brg : '' ?>">
                       <i class="far fa-circle nav-icon"></i>
@@ -169,6 +175,29 @@
                       <p>User</p>
                     </a>
                   </li>
+                </ul>
+              </li>
+                <li class="nav-item has-treeview <?= isset($active_menu_permintaan) ? $active_menu_permintaan : '' ?>">
+                <a href="#" class="nav-link <?= isset($active_menu_pmt) ? $active_menu_pmt : '' ?>">
+                  <i class="nav-icon fa fa-retweet"></i>
+                  <p>Permintaan
+                    <i class="fas fa-angle-left right"></i>
+                  </p>
+                </a>
+                <ul class="nav nav-treeview">
+                  <li class="nav-item">
+                    <a href="<?= base_url('permintaanbarang') ?>" class="nav-link <?= isset($active_menu_permintaan_barang) ? $active_menu_permintaan_barang : '' ?>">
+                      <i class="far fa-circle nav-icon"></i>
+                      <p>Permintaan Barang</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="<?= base_url('datapermintaanbarang') ?>" class="nav-link <?= isset($active_menu_datapermintaanbarang) ? $active_menu_datapermintaanbarang : '' ?>">
+                      <i class="far fa-circle nav-icon"></i>
+                      <p>Data Permintaan Barang</p>
+                    </a>
+                  </li>
+                                   </li>
                 </ul>
               </li>
               <li class="nav-item has-treeview <?= isset($active_menu_open) ? $active_menu_open : '' ?>">

@@ -39,6 +39,12 @@
         <div class="card-body">
           <form class="form-horizontal" action="<?=base_url('barang/simpan')?>" autocomplete="off" method="post">
             <div class="card-body">
+            <div class="form-group row">
+                <label for="nama_barang" class="col-sm-2 col-form-label">Kd Barang</label>
+                <div class="col-sm-6">
+                  <input type="text" class="form-control" name="kd_barang" placeholder="Masukan Nama Barang.." value="<?= $kd_barang ?>" readonly required>
+                </div>
+              </div>
               <div class="form-group row">
                 <label for="id_kategori" class="col-sm-2 col-form-label">Kategori Barang</label>
                 <div class="col-sm-6">
@@ -63,9 +69,9 @@
                 </div>
               </div>           
               <div class="form-group row">
-                <label for="tahun_perolehan" class="col-sm-2 col-form-label">Tahun Perolehan</label>
+                <label for="tahun_perolehan" class="col-sm-2 col-form-label">Harga</label>
                 <div class="col-sm-6">
-                  <input type="number" class="form-control" name="tahun_perolehan" placeholder="20XX" required>
+                  <input type="number" class="form-control" name="harga" placeholder="Ketik harga" required>
                 </div>
               </div>
             </div>

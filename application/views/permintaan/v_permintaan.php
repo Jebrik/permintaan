@@ -5,13 +5,13 @@
     <div class="container-fluid">
       <div class="row mb-2">
         <div class="col-sm-6">
-          <h1>Data Barang</h1>
+          <h1>Data Permintaan</h1>
         </div>
         <div class="col-sm-6">
           <ol class="breadcrumb float-sm-right">
             <li class="breadcrumb-item"><a href="<?=base_url('home')?>">Home</a></li>
-            <li class="breadcrumb-item"><a href="#">Data Master</a></li>
-            <li class="breadcrumb-item active">Barang</li>
+            <li class="breadcrumb-item"><a href="#">Data Permintaan</a></li>
+            <li class="breadcrumb-item active">Permintaan</li>
           </ol>
         </div>
       </div>
@@ -28,8 +28,8 @@
     <div class="card">
       <div class="card-header">
         <h3 class="card-title">
-          <a href="<?=base_url('barang/tambah')?>" class="btn btn-block bg-gradient-primary">
-            Tambah Barang
+          <a href="<?=base_url('Permintaan/tambah')?>" class="btn btn-block bg-gradient-primary">
+            Tambah Permintaan
           </a>
         </h3>
 
@@ -48,30 +48,28 @@
                 <thead>
                   <tr>
                     <th>No.</th>
-                    <th>Kd Barang</th>
                     <th>Kategori</th>
                     <th>Nama</th>
                     <th>Merek</th>
-                    <th>Harga</th>
+                    <th>Tahun Perolehan</th>
                     <th>Aksi</th>
                   </tr>
                 </thead>
                 <tbody>
                   <?php 
                   $no=1;
-                  foreach ($barang as $row): ?>
+                  foreach ($Permintaan as $row): ?>
                   <tr>
                     <td><?=$no++;?></td>
-                    <td><?=$row['kd_barang'];?></td>
                     <td><?=$row['nama_kategori'];?></td>
-                    <td><?=$row['nama_barang'];?></td>
+                    <td><?=$row['nama_Permintaan'];?></td>
                     <td><?=$row['merek'];?></td>
-                    <td><?=$row['harga'];?></td>
+                    <td><?=$row['tahun_perolehan'];?></td>
                     <td>
-                       <a href="<?=base_url('barang/edit/'.$row['id_barang'])?>" class="btn btn-info btn-sm">
+                       <a href="<?=base_url('Permintaan/edit/'.$row['id_Permintaan'])?>" class="btn btn-info btn-sm">
                           <i class="fas fa-edit"></i>
                         </a>
-                        <a href="<?=base_url('barang/hapus/'.$row['id_barang'])?>" class="btn btn-danger btn-sm tombol-hapus">
+                        <a href="<?=base_url('Permintaan/hapus/'.$row['id_Permintaan'])?>" class="btn btn-danger btn-sm tombol-hapus">
                           <i class="fas fa-trash"></i>
                         </a>
                     </td>
@@ -81,11 +79,10 @@
                 <tfoot>
                   <tr>
                     <th>No.</th>
-                    <th>Kd Barang</th>
                     <th>Kategori</th>
                     <th>Nama</th>
                     <th>Merek</th>
-                    <th>Harga</th>
+                    <th>Tahun Perolehan</th>
                     <th>Aksi</th>
                   </tr>
                 </tfoot>

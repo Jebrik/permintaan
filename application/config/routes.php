@@ -19,13 +19,20 @@ $route['home'] = 'Home/index';
 //Statistik
 $route['statistik'] = 'Statistik/index';
 
-//Master
+//Master Barang
 $route['barang'] = 'Barang/index';
 $route['barang/tambah'] = 'Barang/tambahBarang';
 $route['barang/simpan'] = 'Barang/simpanBarang';
 $route['barang/edit/(:any)'] = 'Barang/editBarang/(:any)';
 $route['barang/ubah'] = 'Barang/ubahBarang';
 $route['barang/hapus/(:any)'] = 'Barang/hapusBarang/(:any)';
+//satuan
+$route['satuan'] = 'Satuan/index';
+$route['satuan/tambah'] = 'Satuan/tambahsatuan';
+$route['satuan/hapus/(:any)'] = 'Satuan/hapussatuan/(:any)';
+$route['pengaturan'] = 'Satuan/pengaturan';
+$route['satuan/ubah'] = 'Satuan/updatesatuan';
+$route['satuan/ubah_password'] = 'Satuan/updatePassword';
 //Jenis Barang
 $route['kategori'] = 'KategoriBarang/index';
 $route['kategori/simpan'] = 'KategoriBarang/store';
@@ -43,6 +50,22 @@ $route['users/hapus/(:any)'] = 'User/hapusUser/(:any)';
 $route['pengaturan'] = 'User/pengaturan';
 $route['users/ubah'] = 'User/updateUser';
 $route['users/ubah_password'] = 'User/updatePassword';
+
+//User
+$route['permintaanbarang'] = 'PermintaanBarang/permintaanbarang';
+$route['permintaanbarang/tambah'] = 'PermintaanBarang/tambahPermintaanBarang';
+$route['permintaanbarang/hapus/(:any)'] = 'PermintaanBarang/hapusPermintaanBarang/(:any)';
+$route['pengaturan'] = 'PermintaanBarang/pengaturan';
+$route['permintaanbarang/ubah'] = 'PermintaanBarang/updatePermintaanBarang';
+$route['permintaanbarang/ubah_password'] = 'PermintaanBarang/updatePassword';
+
+//Master
+$route['permintaanbarang'] = 'permintaanbarang/index';
+$route['permintaanbarang/tambah'] = 'permintaanbarang/tambahpermintaanbarang';
+$route['permintaanbarang/simpan'] = 'permintaan/simpanpermintaanbarang';
+$route['permintaanbarang/edit/(:any)'] = 'permintaanbarang/editpermintaanbarang/(:any)';
+$route['permintaanbarang/ubah'] = 'permintaanbarang/ubahpermintaanbarang';
+$route['permintaanbarang/hapus/(:any)'] = 'permintaan/hapuspermintaanbarang/(:any)';
 
 //Aset
 $route['aset_wujud'] = 'Aset/index';
